@@ -84,6 +84,13 @@
         <div class="box-tools pull-right">
           {!! Form::submit( isset($product) ? trans('app.form.update') : trans('app.form.save'), ['class' => 'btn btn-flat btn-lg btn-primary']) !!}
         </div>
+        @if(isset($product))
+        <div class="box-tools pull-right">
+          <a href="{{ route('admin.stock.inventory.add', $product->id) }}" class="btn btn-flat btn-lg btn-success margin-r-5">
+            {!! trans('app.form.add_inventory') !!}
+          </a>
+        </div>
+        @endif
       </div>
     </div>
   </div>

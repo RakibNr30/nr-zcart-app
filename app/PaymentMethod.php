@@ -102,6 +102,9 @@ class PaymentMethod extends BaseModel
             case \App\PaymentMethod::TYPE_MANUAL:
                 return trans('app.payment_method_type.manual.name');
 
+            case \App\PaymentMethod::TYPE_OTHERS:
+                return trans('app.payment_method_type.others.name');
+
             default:
                 return '';
         }

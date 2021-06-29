@@ -194,6 +194,7 @@ class SystemConfig extends BaseModel
                 return (bool) (config('jrfpay.merchant.id') && config('jrfpay.merchant.key'));
 
             case 'wire':
+            case 'razorpay':
             case 'cod':
                 return True;
         }

@@ -80,6 +80,7 @@ return array (
     'remove' => 'অপসারণ',
     'remove_from_wishlist' => 'ইচ্ছামত তালিকা থেকে সরান',
     'save' => 'সংরক্ষণ করুন',
+    'add_inventory' => 'ইনভেন্টরি যুক্ত করুন',
     'selling' => 'বিক্রি শুরু কর',
     'send_message' => 'বার্তা পাঠান',
     'send_password_link' => 'পাসওয়ার্ড রিসেট লিঙ্ক প্রেরণ করুন',
@@ -411,6 +412,7 @@ return array (
     'you_will_be_redirected_to_paypal' => 'নিরাপদে আপনার অর্থ প্রদান সম্পূর্ণ করার জন্য আপনাকে পেপ্যাল ​​এ পুনঃনির্দেশিত করা হবে।',
     'your_feedback_saved' => 'আপনার প্রতিক্রিয়ার জন্য ধন্যবাদ!',
     'you_will_be_redirected_to_paystack' => 'আপনাকে পেস্ট্যাকে পুনঃনির্দেশিত করা হবে।',
+    'you_will_be_redirected_to_razorpay' => 'আপনাকে রেজোরপেতে পুনঃনির্দেশিত করা হবে।',
     'you_will_be_redirected_to_instamojo' => 'আপনাকে ইনস্টামোজোতে পুনঃনির্দেশিত করা হবে।',
   ),
   'input_label' => 

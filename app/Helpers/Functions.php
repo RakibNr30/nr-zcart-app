@@ -134,6 +134,18 @@ if (! function_exists('get_social_media_links')) {
     }
 }
 
+if (! function_exists('get_other_sites')) {
+    /**
+     * Return social_media_links
+     */
+    function get_other_sites()
+    {
+        $sites = \App\Site::all();
+
+        return $sites;
+    }
+}
+
 if (! function_exists('get_shop_url')) {
     /**
      * Return shop title or the application title
@@ -1840,6 +1852,12 @@ if (! function_exists('get_payment_method_type')) {
                         'description' => trans('app.payment_method_type.manual.description'),
                         'admin_description' => trans('app.payment_method_type.manual.admin_description'),
                     ];
+            case PaymentMethod::TYPE_OTHERS:
+                return [
+                    'name' => trans('app.payment_method_type.others.name'),
+                    'description' => trans('app.payment_method_type.others.description'),
+                    'admin_description' => trans('app.payment_method_type.others.admin_description'),
+                ];
         }
     }
 }

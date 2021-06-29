@@ -667,6 +667,7 @@ return [
     'locale_code' => 'The locale code, the code must have the same name as the language folder.',
 
     'locale_code_exmaple' => 'Example for English the code is <em>en</em>',
+    'site_code_exmaple' => 'Example for Bangladesh the code is <em>BD</em>',
 
     'new_language_info' => 'A new language will not affect the system unless you really do the transaction of the language directory. Check the documentation for detail.',
 

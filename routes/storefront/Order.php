@@ -2,6 +2,7 @@
 	Route::post('order/{cart}', 'OrderController@create')->name('order.create');
 	Route::get('paymentFailed/{order}', 'OrderController@paymentFailed')->name('payment.failed');
 	Route::get('paymentSuccess/{gateway}/{order}', 'OrderController@paymentGatewaySuccessResponse')->name('payment.success');
+	Route::post('payment/razorpay/handle/{cart}', 'OrderController@razorpay')->name('payment.razorpay.handle');
 
 	Route::middleware(['auth:customer'])->group(function () {
 		Route::get('order/{order}', 'OrderController@detail')->name('order.detail');

@@ -28,7 +28,9 @@ class OrderController extends Controller
     /**
      * Checkout the specified cart.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param CheckoutCartRequest $request
+     * @param Cart $cart
+     * @param PaymentService $paymentService
      * @return \Illuminate\Http\Response
      */
     public function create(CheckoutCartRequest $request, Cart $cart, PaymentService $paymentService)

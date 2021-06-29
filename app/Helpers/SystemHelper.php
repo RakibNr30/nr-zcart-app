@@ -866,6 +866,19 @@ if (! function_exists('get_payment_config_info'))
                     'msg' => trans('jrfpay::lang.pay_with_jrfpay'),
                 ];
 
+            case 'razorpay':
+                if ($shop) {
+                    $config = $shop->config->razorpay ? TRUE : FALSE;
+                }
+                else {
+                    $config = config('services.razorpay');
+                }
+
+                return [
+                    'config' => $config,
+                    'msg' => trans('theme.notify.you_will_be_redirected_to_razorpay'),
+                ];
+
             case 'wire':
             case 'cod':
                 if ($shop) {

@@ -59,6 +59,11 @@ return [
         'sandbox' => env('PAYPAL_SANDBOX_MODE'),
     ],
 
+    'razorpay' => [
+            'client_id' => env('RAZOR_KEY'),
+            'secret' => env('RAZOR_KEY'),
+        ],
+
     'instamojo' => [
         'api_key' => env('INSTAMOJO_API_KEY'),
         'auth_token' => env('INSTAMOJO_AUTH_TOKEN'),

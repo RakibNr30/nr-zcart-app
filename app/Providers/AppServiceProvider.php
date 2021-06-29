@@ -136,6 +136,9 @@ class AppServiceProvider extends ServiceProvider
 
             case 'jrfpay':
                 return \Incevio\Package\Jrfpay\Services\JrfpayPaymentService::class;
+
+            case 'razorpay':
+                return \App\Services\Payments\RazorpayPaymentService::class;
         }
 
         throw new \ErrorException('Error: Payment Method Not Found.');

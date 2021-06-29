@@ -123,6 +123,7 @@ Route::group(['middleware' => ['auth'], 'namespace' => 'Admin', 'as' => 'admin.'
 			include('admin/State.php');
 			include('admin/Currency.php');
 			include('admin/Language.php');
+			include('admin/Site.php');
 			include('admin/Verification.php');
 		});
 

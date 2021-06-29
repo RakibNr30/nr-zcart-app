@@ -271,7 +271,7 @@ class ProductController extends Controller
         return [
             'id' => $product->id,
             'model' => 'product',
-            'redirect' => route('admin.catalog.product.index')
+            'redirect' => route('admin.catalog.product.edit', [$product->id])
         ];
     }
 }

@@ -179,6 +179,7 @@ return [
     'pending' => 'Pending',
     'reports' => 'Reports',
     'country' => 'Country',
+    'site_url' => 'Site Url',
     'tags' => 'Tags',
     'member_since' => 'Member since',
     'same_as_shipping_address' => 'Same as shipping address',
@@ -349,7 +350,6 @@ return [
     'model_number' => 'Model number',
     'product_type' => 'Product type',
     'physical' => 'Physical',
-    'price' => 'Price',
     'preview' => 'Preview',
     'reason' => 'Reason',
     'download' => 'Download',
@@ -860,6 +860,7 @@ return [
     ],
 
     'form' => [
+        'add_inventory' => 'Add Inventory',
         'body' => 'Body',
         'action_text' => 'Action text',
         'action_url' => 'Action url',
@@ -1371,6 +1372,7 @@ return [
     // Version 1.3.0
     'added_by' => 'Added by',
     'add_language' => 'Add language',
+    'add_site' => 'Add Site',
     'address_verified' => 'Address verified',
     'attachment' => 'Attachment',
     'default_language' => 'Default language',
@@ -1382,6 +1384,8 @@ return [
     'id_verified' => 'ID verified',
     'languages' => 'Languages',
     'language' => 'Language',
+    'sites' => 'Sites',
+    'site' => 'Site',
     'next_billing_date' => 'Next billing date',
     'not_verified' => 'Not verified',
     'rtl' => 'RTL',

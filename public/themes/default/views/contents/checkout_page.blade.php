@@ -234,6 +234,44 @@
             @include('partials.payment_options')
         </div> <!-- /.col-md-4 -->
       </div><!-- /.row -->
+
+        {{--<script src="https://checkout.razorpay.com/v1/checkout.js"
+            data-key="{{ env('RAZOR_KEY') }}"
+            data-amount="{{ 100 * number_format($cart->calculate_grand_total(), 2, '.', '') }}"
+            data-currency="USD"
+            data-image="{{ get_logo_url('platform', 'full') }}"
+            data-theme.color="#F37254">
+        </script>--}}
+
+      <script src="{{ theme_asset_url('js/razorpay.js') }}"></script>
+      <script>
+        var options = {
+          "key": "{{ env('RAZOR_KEY') }}",
+          "amount": "{{ 100 * number_format($cart->calculate_grand_total(), 2, '.', '') }}",
+          "currency": "USD",
+          "image": "{{ get_logo_url('platform', 'full') }}",
+          "handler": function (){
+            document.getElementById('checkoutForm').submit();
+          },
+          "prefill": {},
+          "notes": {},
+          "theme": {
+            "color": "#F37254"
+          }
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.on('payment.failed', function (response){});
+        document.getElementById('razor-pay-now-btn').onclick = function(e){
+          rzp1.open();
+          e.preventDefault();
+        }
+      </script>
+
     {!! Form::close() !!}
   </div>
 </section>
+<style>
+  input.razorpay-payment-button {
+    display: none;
+  }
+</style>

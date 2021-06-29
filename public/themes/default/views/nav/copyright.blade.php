@@ -10,8 +10,13 @@
               </ul>
             </div>
             <div class="col-md-4">
-                <p class="copyright-text">© {{ date('Y') }} <a href="{{ url('/') }}">{{ get_platform_title() }}</a></p>
+                <p class="copyright-text" style="display: flex; justify-content: center; align-items: center; height: 100%; margin: 0;">
+                    © {{ date('Y') }} <a href="{{ url('/') }}">{{ get_platform_title() }}</a>
+                </p>
             </div>
         </div>
     </div>
 </div><!-- /.copyright-area -->
+<style>
+
+</style>

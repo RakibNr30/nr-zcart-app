@@ -80,6 +80,7 @@ return array (
     'remove' => 'retirar',
     'remove_from_wishlist' => 'Eliminar de la lista de deseos',
     'save' => 'Salvar',
+    'add_inventory' => 'Agregar inventario',
     'selling' => 'Empieza a vender',
     'send_message' => 'Enviar mensaje',
     'send_password_link' => 'Enviar enlace de restablecimiento de contraseña',
@@ -411,6 +412,7 @@ return array (
     'you_will_be_redirected_to_paypal' => 'Será redirigido a PayPal para completar su pago de forma segura.',
     'your_feedback_saved' => '¡Gracias por tus comentarios!',
     'you_will_be_redirected_to_paystack' => 'Serás redirigido a Paystack.',
+    'you_will_be_redirected_to_razorpay' => 'Serás redirigido a Razorpay.',
     'you_will_be_redirected_to_instamojo' => 'Serás redirigido a Instamojo.',
   ),
   'input_label' => 

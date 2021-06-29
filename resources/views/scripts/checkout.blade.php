@@ -34,6 +34,13 @@
 	    		hideCardForm();
 	    	}
 
+			if ('razorpay' == code) {
+				showRazorBtn();
+			}
+	    	else {
+	    		hideRazorBtn();
+	    	}
+
 	    	// Alter checkout button text Authorize Net or cybersource
 			if ('authorize-net' == code || 'cybersource' == code) {
 				showAuthorizeNetCardForm();
@@ -168,6 +175,18 @@
     {
 		$('#cc-form').hide().find('input, select').removeAttr('required');
 		$('#pay-now-btn-txt').text('{{trans('theme.button.checkout')}}');
+    }
+
+    // Razorpay
+    function showRazorBtn()
+    {
+        $('#razor-pay-now-btn').css('display', 'block');
+        $('#pay-now-btn').css('display', 'none');
+    }
+    function hideRazorBtn()
+    {
+        $('#pay-now-btn').css('display', 'block');
+        $('#razor-pay-now-btn').css('display', 'none');
     }
 
     // Authorize Net

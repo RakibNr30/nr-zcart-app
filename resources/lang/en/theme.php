@@ -419,6 +419,7 @@ return [
 		'you_will_be_redirected_to_paypal' => 'You will be redirected to PayPal to securely complete your payment.',
 		'your_feedback_saved' => 'Thank you for your feedback!',
 		'you_will_be_redirected_to_paystack' => 'You will be redirected to Paystack.',
+		'you_will_be_redirected_to_razorpay' => 'You will be redirected to Razorpay.',
 		'you_will_be_redirected_to_instamojo' => 'You will be redirected to Instamojo.',
 	],
 

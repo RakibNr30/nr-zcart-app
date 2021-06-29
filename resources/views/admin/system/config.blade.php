@@ -712,7 +712,6 @@
 										            <span>{!! trans('messages.cant_charge_application_fee') !!}</span>
 										        </div>
 											@endif
-
 											<span class="spacer15"></span>
 
 											@if($payment_provider->admin_help_doc_link)

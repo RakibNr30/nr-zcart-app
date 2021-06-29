@@ -567,6 +567,11 @@
                   <i class="fa fa-angle-double-right"></i> {{ trans('app.languages') }}
                 </a>
               </li>
+              <li class="{{ Request::is('admin/setting/site*') ? 'active' : '' }}">
+                <a href="{{ url('admin/setting/site') }}">
+                  <i class="fa fa-angle-double-right"></i> {{ trans('app.sites') }}
+                </a>
+              </li>
             @endif
 
             @if(Auth::user()->isSuperAdmin() && is_incevio_package_loaded('wallet'))

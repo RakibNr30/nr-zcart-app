@@ -18,7 +18,7 @@
 
     <div class="form-group">
       <label>
-        <input name="payment_method" value="{{ $paymentMethod->code }}" data-code="{{ $paymentMethod->code }}" class="i-radio-blue payment-option" type="radio" data-info="{{$config['msg']}}" data-type="{{ $paymentMethod->type }}" required="required" {{ old('payment_method') == $paymentMethod->code ? 'checked' : '' }}/> {{ $paymentMethod->code == 'stripe' ? trans('theme.credit_card') : $paymentMethod->name }}
+        <input name="payment_method" value="{{ $paymentMethod->code }}" data-code="{{ $paymentMethod->code }}" class="i-radio-blue payment-option" type="radio" data-info="{{$config['msg']}}" data-type="{{ $paymentMethod->type }}" required="required" {{ old('payment_method') == $paymentMethod->code ? 'checked' : '' }} onchange="PaymentMethod()"/> {{ $paymentMethod->code == 'stripe' ? trans('theme.credit_card') : $paymentMethod->name }}
       </label>
     </div>
   @endforeach
@@ -41,12 +41,16 @@
 </p>
 
 <div id="submit-btn-block" class="clearfix space30" style="display: none;">
-  <button id="pay-now-btn"  class="btn btn-primary btn-lg btn-block" type="submit">
+  <button id="pay-now-btn" class="btn btn-primary btn-lg btn-block" type="submit">
     <small>
       <i class="far fa-shield"></i> <span id="pay-now-btn-txt">@lang('theme.button.checkout')</span>
     </small>
   </button>
-
+  <button id="razor-pay-now-btn" class="btn btn-primary btn-lg btn-block razor-pay-now-btn" type="submit" style="display: none">
+    <small>
+      <i class="far fa-shield"></i> <span id="pay-now-btn-txt">@lang('theme.button.checkout')</span>
+    </small>
+  </button>
   <a href="javascript:void(0)" id="paypal-express-btn" class="hide" type="submit">
     <img src="{{ asset(sys_image_path('payment-methods') . "paypal-express.png") }}" width="70%" alt="paypal express checkout" title="paypal-express" />
   </a>

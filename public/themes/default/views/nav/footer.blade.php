@@ -174,10 +174,52 @@
                         </div>
                     </div>
                 </div>
+
+                @if($get_other_sites = get_other_sites())
+                    <div class="country__domains">
+                        <div class="row">
+                            <div class="col-12">
+                                <ul>
+                                    @foreach($get_other_sites as $site)
+                                        <li>
+                                            <a target="_blank" href="{{ $site->site_url ?? '' }}">
+                                                <img src="{{ asset(sys_image_path('flags') . strtoupper($site->code) . '.png') }}" class="lang-flag small" /> <span>{{ $site->country ?? '' }}</span>
+                                            </a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                @endif
             </div>
         </div>
     </div>
 </footer>
+
+<style>
+    footer .footer .footer__content {
+        padding: 20px 0;
+    }
+    footer .footer .country__domains {
+        padding: 20px 0;
+        border-top: 1px solid rgba(255,255,255,.5);
+    }
+    footer .footer .country__domains ul li {
+        display: inline;
+        margin-right: 10px;
+        //float: left !important;
+    }
+    footer .footer .country__domains ul li a {
+        color: #fff;
+        font-size: 13px;
+    }
+    @media screen and (max-width: 991px) {
+        footer .footer .footer__content {
+            padding-bottom: 10px;
+        }
+    }
+</style>
 
 <!-- COPYRIGHT AREA -->
 @include('theme::nav.copyright')

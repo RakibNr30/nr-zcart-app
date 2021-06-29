@@ -186,6 +186,7 @@ return [
     'freeze' => [
         'pages' => [1, 2, 3, 4, 5, 6],
         'languages' => [1],
+        'sites' => [1],
     ],
 
     /*
@@ -201,6 +202,7 @@ return [
         'roles' => 3,
         'shops' => 2,
         'langs' => 4,
+        'sites' => 5,
         'customers' => 1,
         'category_groups' => 9,
         'plans' => ['business', 'individual', 'professional'],

@@ -158,6 +158,8 @@
 				formData.append('model_name', result.model);
 				formData.append('redirect_url', result.redirect);
 
+				//console.log(result);
+
 				var node = $('#dropzone-input');
 				if(node.fileinput("getFilesCount") > 0) { // Upload only if there is files
 					node.fileinput('upload').fileinput('disable');

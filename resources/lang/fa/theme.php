@@ -80,6 +80,7 @@ return array (
     'remove' => 'برداشتن',
     'remove_from_wishlist' => 'حذف از لیست دلخواه',
     'save' => 'صرفه جویی',
+    'add_inventory' => 'موجودی را اضافه کنید',
     'selling' => 'شروع به فروش',
     'send_message' => 'پیام فرستادن',
     'send_password_link' => 'ارسال پیوند مجدد گذرواژه',
@@ -411,6 +412,7 @@ return array (
     'you_will_be_redirected_to_paypal' => 'برای تکمیل ایمن پرداخت خود به پی پال هدایت می شوید.',
     'your_feedback_saved' => 'با تشکر از نظرات شما',
     'you_will_be_redirected_to_paystack' => 'شما به Paystack هدایت می شوید.',
+    'you_will_be_redirected_to_razorpay' => 'شما به Razorpay هدایت می شوید.',
     'you_will_be_redirected_to_instamojo' => 'شما به Instamojo هدایت می شوید.',
   ),
   'input_label' => 
